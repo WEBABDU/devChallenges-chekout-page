@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="images/devchallenges.png" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Checkout page</title>
+  </head>
+  <body>
+    <main class="main | container">
+      <h1 class="main__title | margin-top">Checkout</h1>
+      <form class="form | margin-top" action="#">
+        <div class="form__wrapper">
+          <div class="form__pottle | flow margin-top">
+            <div class="card">
+              <img src="/images/photo1.png" alt="photo1" />
+              <div class="card__content">
+                <div class="card__description | flow">
+                  <h4 class="fw-600 fs-200 clr-neutral-500">Vintage Backbag</h4>
+                  <span class="fw-600 fs-200 clr-accent-100">$54.99</span>
+                  <span class="fw-600 fs-100 clr-neutral-500">$94.99</span>
+                </div>
+                <div class="card__calculate">
+                  <span class="card__decrease"
+                    ><img src="/images/minus.svg" alt="minus"
+                  /></span>
+                  <span class="card__count | fw-600 fs-400 clr-neutral-600"
+                    >1</span
+                  >
+                  <span class="card__increase"
+                    ><img src="/images/plus.svg" alt="plus"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/photo2.png" alt="photo2" />
+              <div class="card__content">
+                <div class="card__description | flow">
+                  <h4 class="fw-600 fs-200 clr-neutral-500">Levi Shoes</h4>
+                  <span class="fw-600 fs-200 clr-accent-100">$74.99</span>
+                  <span class="fw-600 fs-100 clr-neutral-500">$124.99</span>
+                </div>
+
+                <div class="card__calculate">
+                  <span class="card__decrease"
+                    ><img src="/images/minus.svg" alt="minus"
+                  /></span>
+                  <span class="card__count | fw-600 fs-400 clr-neutral-600"
+                    >1</span
+                  >
+                  <span class="card__increase"
+                    ><img src="/images/plus.svg" alt="plus"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="form__pottle-footer">
+              <div class="shipping">
+                <h5 class="fw-600 fs-300 clr-neutral-600">Shipping</h5>
+                <span class="fw-600 fs-300 clr-neutral-600">$19</span>
+              </div>
+              <div class="total">
+                <h5 class="fw-600 fs-300 clr-neutral-600">Total</h5>
+                <span class="fw-600 fs-300 clr-neutral-600">$148.98</span>
+              </div>
+            </div>
+          </div>
+          <div class="form__content | margin-top">
+            <div class="form__contacts | flow">
+              <h3 class="fw-600 fs-300 clr-neutral-600">Contact infomation</h3>
+              <div class="form__control | flow">
+                <label class="fw-600 fs-100" for="email">E-mail</label>
+                <img src="/images/email.svg" alt="email" />
+                <input type="text" placeholder="Enter your email..." />
+              </div>
+              <div class="form__control | flow">
+                <label class="fw-600 fs-100" for="phone">Phone</label>
+                <img src="/images/phone.svg" alt="phone" />
+                <input type="tel" placeholder="Enter your phone..." />
+              </div>
+              <h3 class="fw-600 fs-300 clr-neutral-600 margin-top">
+                Shipping address
+              </h3>
+              <div class="form__control | flow">
+                <label class="fw-600 fs-100" for="name">Full name</label>
+                <img src="/images/account_circle.svg" alt="name" />
+                <input type="text" placeholder="Your name..." />
+              </div>
+              <div class="form__control | flow">
+                <label class="fw-600 fs-100" for="address">Address</label>
+                <img src="/images/home.svg" alt="home" />
+                <input type="text" placeholder="Your address.." />
+              </div>
+              <div class="form__control | flow">
+                <label class="fw-600 fs-100" for="location">City</label>
+                <img src="/images/location_city.svg" alt="location_city" />
+                <input type="text" placeholder="Your city.." />
+              </div>
+              <div class="form__two-controls">
+                <div class="dropdown">
+                  <div class="form__control | flow" data-variant="half">
+                    <label class="fw-600 fs-100" for="country">Country</label>
+                    <img src="/images/public.svg" alt="public" />
+                    <input
+                      class="dropdown__search"
+                      type="text"
+                      placeholder="Your country.."
+                    />
+                    <div class="dropdown__toggler">
+                      <img class="dropdown__toggler-arrow" src="/images/arrow.svg" alt="arrow" />
+                    </div>
+                  </div>
+                  <ul class="dropdown__list"></ul>
+                </div>
+                <div class="form__control | flow" data-variant="half">
+                  <label class="fw-600 fs-100" for="postal">City</label>
+                  <img src="/images/markunread.svg" alt="postal" />
+                  <input type="text" placeholder="Your postal code.." />
+                </div>
+              </div>
+              <div class="form__control-checkbox | flow">
+                <input type="checkbox" id="save" />
+                <label class="fw-600 fs-100" for="save"
+                  >Save this information for next time</label
+                >
+              </div>
+            </div>
+            <div class="form__button | margin-top">
+              <button>Continue</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer | container margin-top">
+      <p class="fw-600">
+        created by
+        <a class="footer__link | fw-700" href="">WEBABDU</a>
+        - devChallenges.io
+      </p>
+    </footer>
+  </body>
+
+  <script src="/js/main.js"></script>
+</html>
